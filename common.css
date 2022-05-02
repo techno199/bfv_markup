@@ -63,6 +63,24 @@ body * {
     transform: none;
 }
 
+@keyframes loader {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(135deg);
+    }
+    50% {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(135deg);
+    }
+    75% {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(270deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(270deg);
+    }
+}
+
 .loader {
     position: absolute;
     top: 110px;
@@ -72,6 +90,7 @@ body * {
     height: 80px;
     background: red;
     z-index: var(--zi-loader);
+    animation: loader 4s infinite forwards;
 }
 
 .backdrop {

@@ -1,6 +1,6 @@
 const APP_CONFIG = {
-    buildVersion: '1.0.5',
-    loadingTime: 5000,
+    buildVersion: '1.0.6',
+    loadingTime: 10000,
     enableMusic: true
 }
 
