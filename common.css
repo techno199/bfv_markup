@@ -1,0 +1,92 @@
+:root {
+    --zi-loader: 100;
+    --zi-backdrop: 10;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+body * {
+    font-family: Futura;
+}
+
+.page {
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+
+.btn {
+    --clr-btn-text: white;
+    --clr-btn-bg: none;
+    --clr-btn-text-hover: rgb(26, 26, 26);
+    --clr-btn-bg-hover: white;
+    --pad-default: 24px 36px;
+    --pad-small: 8px 12px;
+    --fs-default: 32px;
+    --fs-small: 18px;
+    --ls-default: 6px;
+    --ls-small: 2px;
+
+    display: grid;
+    width: max-content;
+    padding: var(--pad-default);
+    font-size: var(--fs-default);
+    font-weight: 400;
+    background: var(--clr-btn-bg);
+    border: none;
+    color: var(--clr-btn-text);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .1s ease;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: var(--ls-default);
+}
+
+.btn:hover {
+    background: var(--clr-btn-bg-hover);
+    color: var(--clr-btn-text-hover);
+    transform: scale(1.02);
+}
+
+.btn-small {
+    padding: var(--pad-small);
+    font-size: var(--fs-small);
+    letter-spacing: var(--ls-small);
+}
+
+.btn-small:hover {
+    transform: none;
+}
+
+.loader {
+    position: absolute;
+    top: 110px;
+    right: 180px;
+    display: none;
+    width: 80px;
+    height: 80px;
+    background: red;
+    z-index: var(--zi-loader);
+}
+
+.backdrop {
+    position: absolute;
+    display: none;
+    inset: 0;
+    background: black;
+    z-index: var(--zi-backdrop);
+}
+
+.logo {
+    position: absolute;
+    left: 80px;
+    font-size: 78px;
+    color: white;
+    font-weight: 400;
+    text-shadow: #e0e0e0 1px 1px 4px;
+    font-family: Bebas Neue;
+}

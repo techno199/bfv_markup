@@ -1,0 +1,10 @@
+#loadingPage {
+    background: url('images/bfv_loading_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.loadingPage_btnPlay {
+    position: absolute;
+    bottom: 200px;
+    left: 120px;
+}
