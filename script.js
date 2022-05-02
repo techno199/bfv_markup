@@ -1,5 +1,5 @@
 const APP_CONFIG = {
-    buildVersion: '1.0.6',
+    buildVersion: '1.0.7',
     loadingTime: 10000,
     enableMusic: true
 }
@@ -107,6 +107,11 @@ const initButtonsAudio = () => {
             $('.gallery').gallery();
         }, APP_CONFIG.loadingTime);
     });
+
+    $('.btn').hover(function() {
+        console.log(this);
+        $(this).removeClass('mainMenuPage_galleryCard_mark')
+    })
 
     $('.mainMenuPage_btnQuit').click(() => {
         $mainMenuPage.fadeOut();
