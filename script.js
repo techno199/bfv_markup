@@ -45,7 +45,7 @@ $.fn.gallery = function() {
     $this.on('mousewheel', (e) => {
         const { originalEvent } = e;
         const { deltaY } = originalEvent;
-        $this.scrollLeft($this.scrollLeft() - deltaY)
+        $this.scrollLeft($this.scrollLeft() + deltaY)
     })
 }
 
