@@ -1,4 +1,5 @@
 const APP_CONFIG = {
+    buildVersion: '1.0.5',
     loadingTime: 5000,
     enableMusic: true
 }
@@ -118,7 +119,8 @@ const initButtonsAudio = () => {
     })
 
     const init = () => {
-        $loadingPage.show();   
+        $loadingPage.show();
+        $('.loadingPage_gameVersion').append(`build ${APP_CONFIG.buildVersion}`);
     }
 
     init();
