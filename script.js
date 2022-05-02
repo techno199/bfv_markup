@@ -1,5 +1,5 @@
 const APP_CONFIG = {
-    loadingTime: 5500,
+    loadingTime: 500,
     enableMusic: true
 }
 

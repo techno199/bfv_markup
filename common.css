@@ -30,6 +30,7 @@ body * {
     --ls-default: 6px;
     --ls-small: 2px;
 
+    position: relative;
     display: grid;
     width: max-content;
     padding: var(--pad-default);
